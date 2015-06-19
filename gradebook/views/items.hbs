@@ -1,0 +1,37 @@
+<h1>{{title}}</h1>
+	
+
+	
+	{{#if temp}}{
+	<h3>
+CONGRATULATIONS, only because you are an instructor do you get this exclusive on time message. GOOD FOR YOU!</h3>
+	
+{{/if}}
+
+
+<div class="bottomSection">
+		<form method="POST" action="">
+		Item(s)<input type="text" name="name" class="quantity"> -- Approx Cost
+		 <input type="number" name="cost"><input type="hidden" name="slug" value={{slug}}>
+		
+		<input type="submit" value="Show List">
+		</form>
+
+		<body>
+		<ul>{{#each items}}
+			<ol>
+				{{this.name}} -- ${{this.cost}}
+			
+			</ol>
+			{{/each}}
+		</ul>
+		</body>
+
+
+
+
+
+
+		
+
+

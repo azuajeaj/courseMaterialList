@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+function myFunction() {
+var name = document.getElementById("name").value;
+var message = document.getElementById("message").value;
+
+// Returns successful data submission message when the entered information is stored in database.
+var dataString = 'name1=' + name + 'message1' + message;
+if (name == '' || message== '') {
+alert("Please Fill All Fields");
+} else {
+// AJAX code to submit form.
+$.ajax({
+type: "POST",
+url: "ajax.php",
+data: dataString,
+cache: false,
+success: function(html) {
+alert(html);
+}
+});
+}
+return false;
+}
+</script>
+</head>
+<body>
+<div id="mainform">
+<div class="innerdiv">
+<h2>Submit Feedback</h2>
+<!-- Required Div Starts Here -->
+<form id="form" name="form">
+
+<div>
+<label>Name :</label>
+<input id="name" type="text">
+<div>
+<textarea id="message"></textarea>
+</div>
+
+<input id="submit" onclick="myFunction()" type="button" value="Submit">
+</div>
+</form>
+<div id="clear"></div>
+</div>
+<div id="clear"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+
+<ul>{{#each test}}
+	<li><a href="/list/{{slug}}">{{this.name}}</a>
+		
+	</li>
+	{{/each}}</ul>
+
+<br>
+<a href="/list">All Courses</a> |
+<a href="/list/create">Add a new Course</a> 

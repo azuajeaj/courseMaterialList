@@ -1,0 +1,19 @@
+{
+  "name": "aja391-final-project",
+  "version": "1.0.0",
+  "description": "This is the Readme file for my web app. It will simulate a student/teacher Course Material List maker . Students can log in and add their courses to a list, and then make individual course lists. Both type of users will intially be greeted with a typical Username, Password screen. Once entered, the page should display the courses the user interacts with. There are instances where the app distinguishes between instructor and student (BETA, Joe please use your nyu id exactly, that is how the boolean logic works in this instance of the site.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-002-fall-2014/aja391-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-002-fall-2014/aja391-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-002-fall-2014/aja391-final-project#readme"
+}
